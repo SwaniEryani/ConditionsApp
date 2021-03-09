@@ -11,7 +11,7 @@ const useApplicationData = () => {
   useEffect(() => {
     localStorage.clear();
     axios
-    .get(`http://localhost:5000/api/conditions`)
+    .get(`http://localhost:5000/api/condition`)
     .then(res => {
       setState(prev => ({
         ...prev,
