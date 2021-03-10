@@ -7,7 +7,7 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
-  lambdaHashingVersion: 20201221
+# lambdaHashingVersion: 20201221
 
 
 functions:
@@ -16,7 +16,7 @@ functions:
     events:
       - http:
           path: /
-          method: GET
+          method: get
           cors: true
       - http:
           path: /{proxy+}

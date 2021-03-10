@@ -1,6 +1,6 @@
 const express= require('express');
 
-var router = express.Router({mergeParams: true});
+const router = express.Router({mergeParams: true});
 // const db = {
 //   conditions: require("../data/conditions")
 // }
