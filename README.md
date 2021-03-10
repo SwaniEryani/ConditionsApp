@@ -19,8 +19,29 @@ in the console you will see `app listening on port 5000` this means it is workin
 
 ## frontEnd 
 
-Displays an the image, title and snippet for all the conditions and 
+Displays an the image, title and snippet for all the conditions fetched from teh api and it is responsive 
 
+### using 
+- create react app
+- axios
 
+### Run the frontEnd
+to run the api in the root folder open the terminal type `cd front` then `npm  start` to run the app on the browser you will se the app 
 
+## Screen Shots
 
+### Mobile
+
+![](mobile.png) 
+
+### Desktop
+
+![](desktop.png) 
+
+### Tools
+- VS code 
+- Postman
+- GitHub
+- AWS Amplify
+- AWS Lambda
+- GoogleDev tool
