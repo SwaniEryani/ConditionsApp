@@ -13,7 +13,7 @@ export default function Search(props) {
   }
   return (
     <div className="Search-container">
-      <h2>Enter Coditin name:</h2>
+      <h2>Enter Condition name:</h2>
 
       <form onSubmit={handleSubmit}>
         <div className="Search-row">

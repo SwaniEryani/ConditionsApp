@@ -2,7 +2,7 @@
 
 service: api
 
-frameworkVersion: '2'
+#frameworkVersion: '2'
 
 provider:
   name: aws
