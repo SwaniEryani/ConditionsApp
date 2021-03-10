@@ -13,8 +13,7 @@ export default function Conditions(props) {
   const conditions = props.state.conditions;
 
   
-  const { mode, transition, back } = useVisualMode(
-     ALL );
+  const { mode, transition, back } = useVisualMode( ALL );
   return (
     <div>
       {mode === ALL && (
@@ -25,7 +24,7 @@ export default function Conditions(props) {
       )}
       {mode === SINGLE && (
         <SingleCondition
-          label={condition.label || null}
+          label={condition.label }
           image={condition.image || null}
           snippet={condition.snippet || null}
           synonyms={condition.synonyms || null}

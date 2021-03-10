@@ -175,7 +175,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/api/dev/1615250411332-2021-03-09T00:40:11.332Z/api.zip"
+                "S3Key": "serverless/api/dev/1615335282250-2021-03-10T00:14:42.250Z/api.zip"
               },
               "Handler": "handler.handler",
               "Runtime": "nodejs12.x",
@@ -193,14 +193,14 @@
               "AppDashapiLogGroup"
             ]
           },
-          "AppDashapiLambdaVersionu1mzFBPbHEY3h7hwUL9EgOQkwCIyFHbdSCAEVNKcYE": {
+          "AppDashapiLambdaVersionL4KDOnmBSCiJHvhibuP1OqfdpJwNJHn6rMpQuu1tFKs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppDashapiLambdaFunction"
               },
-              "CodeSha256": "Ef1QGWLQkEMyggI7ngJEgsUNd9fR48CfPVba7PhQTmM="
+              "CodeSha256": "abr6PS99CHKJYRbFLg95F+XmQ7XmMIwdtIvp4OfFez0="
             }
           },
           "ApiGatewayRestApi": {
@@ -412,7 +412,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1615250385031": {
+          "ApiGatewayDeployment1615335251834": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -474,7 +474,7 @@
           "AppDashapiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppDashapiLambdaVersionu1mzFBPbHEY3h7hwUL9EgOQkwCIyFHbdSCAEVNKcYE"
+              "Ref": "AppDashapiLambdaVersionL4KDOnmBSCiJHvhibuP1OqfdpJwNJHn6rMpQuu1tFKs"
             }
           },
           "ServiceEndpoint": {
@@ -650,7 +650,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppDashapiLambdaVersionu1mzFBPbHEY3h7hwUL9EgOQkwCIyFHbdSCAEVNKcYE"
+        "versionLogicalId": "AppDashapiLambdaVersionL4KDOnmBSCiJHvhibuP1OqfdpJwNJHn6rMpQuu1tFKs"
       }
     },
     "configValidationMode": "warn",
@@ -672,7 +672,7 @@
     "artifact": "/Users/silwanaleryani/lighthouse/Projects/conditionsApp/api/.serverless/api.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/api/dev/1615250411332-2021-03-09T00:40:11.332Z",
+    "artifactDirectoryName": "serverless/api/dev/1615335282250-2021-03-10T00:14:42.250Z",
     "artifact": "api.zip"
   }
 }

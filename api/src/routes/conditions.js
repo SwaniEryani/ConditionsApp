@@ -9,9 +9,10 @@ let tempDb = db.conditions;
 /* GET conditions listing. */
 router.get('/', function(req, res) {
   console.log("tempDb",tempDb.conditions);
-  res.send(tempDb.conditions);
+  res.send(db.conditions);
 });
 
+/* POst new condition into temp object. */
 router.post("/", function  (req, res) {
   if (!req.body.label) {
     res.status(400).json({ error: 'invalid request: Lable for the condition'});
