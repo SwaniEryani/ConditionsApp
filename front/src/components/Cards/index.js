@@ -3,7 +3,6 @@ import CardItem from "./CardItem";
 import "./Cards.css";
 
 export default function Cards(props) {
-  console.log("Cards props.conditions", props.conditions);
 
   const conditionList = props.conditions.map((condition) => {
     let snippetFixedLength = null;

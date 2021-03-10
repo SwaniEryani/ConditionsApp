@@ -11,7 +11,8 @@ const useApplicationData = () => {
   useEffect(() => {
     localStorage.clear();
     axios
-    .get(`http://localhost:5000/api/condition`)
+    // .get(`http://localhost:5000/api/condition`)//from local host
+    .get(`https://gh3f4o13vd.execute-api.us-east-1.amazonaws.com/dev/api/condition`)// from aws 
     .then(res => {
       setState(prev => ({
         ...prev,

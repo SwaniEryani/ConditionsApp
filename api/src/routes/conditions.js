@@ -4,7 +4,7 @@ const router = express.Router({mergeParams: true});
 const db = {
   conditions: require("../data/conditions")
 }
-let tempDb = db.conditions;
+let tempDb = db.conditions;// temprary object so router.post can work 
 
 /* GET conditions listing. */
 router.get('/', function(req, res) {
@@ -26,7 +26,7 @@ router.post("/", function  (req, res) {
     image: req.body.image
   };
   tempDb.conditions.push(condition)
-  res.send(tempDb);
+  res.status(200).json(tempDb);
 });
 
 module.exports = router;
