@@ -32,11 +32,11 @@ to run the api in the root folder open the terminal type `cd front` then `npm  s
 
 ### Mobile
 
-![https://github.com/SwaniEryani/conditionsApp/blob/master/DOX/mobile.png](mobile.png) 
+![Mobile](https://github.com/SwaniEryani/conditionsApp/blob/master/DOX/mobile.png) 
 
 ### Desktop
 
-![https://github.com/SwaniEryani/conditionsApp/blob/master/DOX/desktop.png](desktop.png) 
+![Desktop](https://github.com/SwaniEryani/conditionsApp/blob/master/DOX/desktop.png) 
 
 ### Tools
 - VS code 
