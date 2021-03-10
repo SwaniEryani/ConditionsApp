@@ -7,8 +7,8 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/', conditionsRouters);
+app.use('/api', conditionsRouters);
 
-app.listen(5000, ()=> console.log('app listening on port 5000'));
+// app.listen(5000, ()=> console.log('app listening on port 5000'));
 
-module.express = app;
+module.exports = app;

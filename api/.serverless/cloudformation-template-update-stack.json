@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api/dev/1615335282250-2021-03-10T00:14:42.250Z/api.zip"
+          "S3Key": "serverless/api/dev/1615336248559-2021-03-10T00:30:48.559Z/api.zip"
         },
         "Handler": "handler.handler",
         "Runtime": "nodejs12.x",
@@ -179,14 +179,14 @@
         "AppDashapiLogGroup"
       ]
     },
-    "AppDashapiLambdaVersionL4KDOnmBSCiJHvhibuP1OqfdpJwNJHn6rMpQuu1tFKs": {
+    "AppDashapiLambdaVersionPgmUXKP5eIyCeDl1kowCvrt2n1X3GpEvdaKs1KjaE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppDashapiLambdaFunction"
         },
-        "CodeSha256": "abr6PS99CHKJYRbFLg95F+XmQ7XmMIwdtIvp4OfFez0="
+        "CodeSha256": "xsok+Ta5FIai85epmUHvPt6XizquuDC7GliqX2xxwvg="
       }
     },
     "ApiGatewayRestApi": {
@@ -398,7 +398,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1615335251834": {
+    "ApiGatewayDeployment1615336237843": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -460,7 +460,7 @@
     "AppDashapiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppDashapiLambdaVersionL4KDOnmBSCiJHvhibuP1OqfdpJwNJHn6rMpQuu1tFKs"
+        "Ref": "AppDashapiLambdaVersionPgmUXKP5eIyCeDl1kowCvrt2n1X3GpEvdaKs1KjaE"
       }
     },
     "ServiceEndpoint": {
