@@ -45,3 +45,4 @@ to run the api in the root folder open the terminal type `cd front` then `npm  s
 - AWS Amplify
 - AWS Lambda
 - GoogleDev tool
+- PhotoShop
