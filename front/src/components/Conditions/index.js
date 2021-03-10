@@ -8,23 +8,23 @@ export default function Conditions(props) {
   const ALL = "ALL";
   const SINGLE = "SINGLE";
 
-  const [condition, setCondition] = useState({})
-  
+  const [condition, setCondition] = useState({});
+
   const conditions = props.state.conditions;
 
-  
-  const { mode, transition, back } = useVisualMode( ALL );
+  const { mode, transition, back } = useVisualMode(ALL);
   return (
     <div>
       {mode === ALL && (
-        <Cards 
-        conditions={conditions} 
-        onChoose={() => transition(SINGLE)} 
-        setCondition = {setCondition}/>
+        <Cards
+          conditions={conditions}
+          onChoose={() => transition(SINGLE)}
+          setCondition={setCondition}
+        />
       )}
       {mode === SINGLE && (
         <SingleCondition
-          label={condition.label }
+          label={condition.label}
           image={condition.image || null}
           snippet={condition.snippet || null}
           synonyms={condition.synonyms || null}

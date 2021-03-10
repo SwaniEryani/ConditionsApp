@@ -3,7 +3,6 @@ import CardItem from "./CardItem";
 import "./Cards.css";
 
 export default function Cards(props) {
-
   const conditionList = props.conditions.map((condition) => {
     let snippetFixedLength = null;
     if (condition.snippet) {
@@ -17,8 +16,8 @@ export default function Cards(props) {
         label={condition.label}
         image={condition.image}
         text={snippetFixedLength}
-        onChoose ={props.onChoose}
-        setCondition ={()=>props.setCondition(condition)}
+        onChoose={props.onChoose}
+        setCondition={() => props.setCondition(condition)}
       />
     );
   });

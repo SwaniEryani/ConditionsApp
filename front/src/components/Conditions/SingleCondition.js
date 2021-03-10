@@ -7,7 +7,7 @@ export default function SingleCondition({
   snippet,
   synonyms,
   keywords,
-  onBack
+  onBack,
 }) {
   const noImage = "images/no-image.jpg";
   let synonymsList = [];
@@ -18,7 +18,7 @@ export default function SingleCondition({
   }
   let keywordsList = [];
   if (keywords) {
-     keywordsList = keywords.map((keyword) => {
+    keywordsList = keywords.map((keyword) => {
       return <li> {keyword}</li>;
     });
   }

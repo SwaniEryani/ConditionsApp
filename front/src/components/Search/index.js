@@ -3,14 +3,13 @@ import "./index.css";
 import SearchResult from "./SearchResult";
 
 export default function Search(props) {
- const [name, setName]= useState ("");
- const [searchContent, setSearchContent] = useState("")
+  const [name, setName] = useState("");
+  const [searchContent, setSearchContent] = useState("");
 
-  const handleSubmit= (event)=>{
+  const handleSubmit = (event) => {
     event.preventDefault();
     setName(searchContent);
-    console.log("name",name);
-  }
+  };
   return (
     <div className="Search-container">
       <h2>Enter Condition name:</h2>
@@ -31,7 +30,7 @@ export default function Search(props) {
             </button>
           </div>
         </div>
-        {name && <SearchResult name={name} state = {props.state} />}
+        {name && <SearchResult name={name} state={props.state} />}
       </form>
     </div>
   );
